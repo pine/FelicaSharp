@@ -89,7 +89,6 @@ namespace FelicaSharp
                 if (this.pollingThread == null)
                 {
                     this.pollingThread = new Thread(new ThreadStart(this.Polling));
-                    this.pollingThread.SetApartmentState(ApartmentState.STA);
                     this.pollingThread.Start();
                 }
             }
